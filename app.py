@@ -105,6 +105,7 @@ class Appication(Module):
 @dataclass
 class PrintAnyCommand(Command):
     text: str | None = None
+    
 def print_any_handler(cmd: PrintAnyCommand):
     print(f"printing {cmd.text}")
     result = cmd.text
